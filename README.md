@@ -3,7 +3,7 @@
 
 ##2. 사용된 도구  
 - Raspberry Pi model B+  
-- SanDisk sd card 32GB  
+- SanDisk micro sd card 32GB  
 - SanDisk Adapter  
 - ipTIME N100 mini (USB Wi-Fi dongle)  
 
