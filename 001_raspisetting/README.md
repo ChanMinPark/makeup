@@ -49,3 +49,8 @@ Ok를 눌러서 Password를 입력한다.
 사용자의 지역을 설정하는 부분이다.  
 4번 옵션인 Internationalisation Options를 선택한다.  
 다음, I1 Change Locale을 선택한다.  
+여기서 다수 옵션을 선택할 수 있는데(선택은 스페이스바) 나는 en_GB.UTF-8 / en_US.UTF-8 / ko_KR.EUC-KR / ko_KR.UTF-8 을 선택했다.  
+그리고 다음 화면은 default를 선택하는 것인데, 난 ko_KR.UTF-8을 선택했다.  
+설정하는데 시간이 좀 걸린다.(그래봤자 몇분정도)  
+
+(5) 시간대 변경하기  
