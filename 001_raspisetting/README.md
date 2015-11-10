@@ -112,3 +112,4 @@ Asia를 선택하고, Seoul을 선택한다.
     이렇게 설정을 완료하고 sudo reboot 으로 재부팅하고 ifconfig 로 무선 ip가 잡힌것을 확인할 수 있다.  
     
 - 다음에는 Ethernet 설정과 한글 설정을 해야겠다.  
+- 고정 ip도 잡아야지 http://giyatto.tistory.com/30
