@@ -67,5 +67,11 @@ Asia를 선택하고, Seoul을 선택한다.
 기본 설정 후에 시간이 한국 시간이랑 다른데 아래 링크 보면서 다음에 수정해야겠다.  
 http://feelsoverygood.tistory.com/42  
 
+- Raspberry Pi에 수동으로 무선랜 설정하기  
+
+
+    1) wpa_supplicant.conf설정  
+    ㅁㄴㅇㄻㄴㅇㄹㄴㅁㅇㄻㄴㅇㄹ
+
 
 - 다음에는 wifi/Ethernet 설정과 한글 설정을 해야겠다.  
