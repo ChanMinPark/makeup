@@ -69,9 +69,50 @@ http://feelsoverygood.tistory.com/42
 
 - Raspberry Pi에 수동으로 무선랜 설정하기  
 
-
     1) wpa_supplicant.conf설정  
-    ㅁㄴㅇㄻㄴㅇㄹㄴㅁㅇㄻㄴㅇㄹ
+    sudo nano /etc/wpa_supplicant/wpa_supplicant.conf  
+    위의 명령어로 wpa_supplicant.conf 파일을 열어서 연결하려는 AP의 정보를 입력한다.  
+    
+    만약 비밀번호가 없는 open된 AP의 경우  
+    ```
+    network={  
+        ssid="ssid이름"  
+        key_mgmt=NONE  
+        auth_alg=OPEN  
+    }  
+    ```
 
+    비밀번호가 있고 인증방식을 PSK로 사용하면 아래와 같이 입력한다.  
+    ```
+    network={  
+        ssid="ssid이름"  
+        key_mgmt=WPA-PSK  
+        psk="ssid비밀번호"  
+    }  
+    ```
+    
+    2) /etc/network/interfaces 설정  
+    sudo nano /etc/network/interfaces  
+    기본적으로 초기 설정되어 있는 그대로 두면 되는데 아래 내용이 초기 설정이다.  
+    ```
+     auto lo
+     iface lo inet loopback
+     
+     auto eth0
+     allow-hotplug eth0
+     iface eth0 inet manual
+     
+     auto wlan0
+     allow-hotplug wlan0
+     iface wlan0 inet manual
+     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+     
+     auto wlan1
+     allow-hotplug wlan1
+     iface wlan1 inet manual
+     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+    ```
 
-- 다음에는 wifi/Ethernet 설정과 한글 설정을 해야겠다.  
+    이렇게 설정을 완료하고 sudo reboot 으로 재부팅하고 ifconfig 로 무선 ip가 잡힌것을 확인할 수 있다.  
+    
+- 다음에는 Ethernet 설정과 한글 설정을 해야겠다.  
