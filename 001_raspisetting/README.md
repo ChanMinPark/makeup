@@ -111,5 +111,32 @@ Asia를 선택하고, Seoul을 선택한다.
 
     이렇게 설정을 완료하고 sudo reboot 으로 재부팅하고 ifconfig 로 무선 ip가 잡힌것을 확인할 수 있다.  
     
+- 라즈베리파이에 고정 ip 설정하기  
+라즈베리파이가 붙어있는 AP가 dhcp를 운영하더라고 라즈베리파이에서 고정 ip를 지정할 수 있다.  
+유/무선 모두 가능하다.  
+방법은 /etc/network/interfaces 의 내용을 아래와 같이 수정해 주면 된다.  
+```
+기존에 아래와 같이 되어 있는데
+1 auto wlan0
+2 allow-hotplug wlan0
+3 iface wlan0 inet manual
+4 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+이렇게 3번줄을 manual에서 static으로 수정하고, 4~6번 줄을 추가 한다.
+1 auto wlan0
+2 allow-hotplug wlan0
+3 iface wlan0 inet static
+4 address "원하는 ip (ex. 192.168.0.123)"
+5 netmask 255.255.255.0**
+6 gateway "접속한 AP의 gateway주소 (ex. 192.168.0.1)"
+7 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+나는 무선을 사용하기 때문에 wlan0에 설정하였는데 유선을 사용하면 eth0에 수정/추가 하면된다.  
+변경된 내용을 저장하고  
+```
+sudo /etc/init.d/networking restart
+```
+를 해서 네트워킹을 재시작한다.  
+
+
 - 다음에는 Ethernet 설정과 한글 설정을 해야겠다.  
-- 고정 ip도 잡아야지 http://giyatto.tistory.com/30
