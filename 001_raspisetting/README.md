@@ -139,4 +139,9 @@ sudo /etc/init.d/networking restart
 를 해서 네트워킹을 재시작한다. 그냥 재부팅해도 된다.  
 재부팅하고 ifconfig로 변경 사항을 확인할 수 있다.  
 
+- 내가 사용한 wireless dongle인 ipTIME N100 mini (USB Wi-Fi dongle)는 기본적으로 절전모드가 설정되어 있다.  
+그래서 일정 시간 이상 인터넷 접근이 없으면 무선연결이 끊어진다.  
+그래서 절전모드를 해제해주면 좋다. 이에 대한 설명은 블로그에 자세히 설명해 놓았다.  
+http://walkinpcm.blogspot.kr/2015/09/3-raspberrypi.html  
 
+#여기까지 기본 Setting을 마치고 현재까지의 OS 이미지를 앞으로 기본 이미지로 사용할 것이다.  
