@@ -140,4 +140,3 @@ sudo /etc/init.d/networking restart
 재부팅하고 ifconfig로 변경 사항을 확인할 수 있다.  
 
 
-- 다음에는 한글 설정을 해야겠다.  
