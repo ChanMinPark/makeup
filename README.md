@@ -14,4 +14,4 @@
 
 (2) NFC Door  
 연구실에 출입제한을 위하여 member들에게만 출입Tag를 발급하여 Tagging을 통해서 문을 열리게 한다.  
-세부 폴더 : ..  
+세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/002_NFC_Door  
