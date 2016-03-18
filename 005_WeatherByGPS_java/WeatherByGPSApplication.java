@@ -15,7 +15,7 @@ public class WeatherByGPSApplication {
 			//OpenAPI call하는 URL
 			String urlstr = "http://api.openweathermap.org/data/2.5/weather?"
 						+ "lat="+lat+"&lon="+lon
-						+"&appid=b1b15e88fa797225412429c1c50c122a";
+						+"&appid=본인의키를넣으세요";
 			URL url = new URL(urlstr);
 			BufferedReader bf;
 			String line;
