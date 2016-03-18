@@ -1,7 +1,13 @@
 ##1. 개요  
 - 최초에 다운받은 라즈비안에 개발을 위해 필요한 Setting을 기록한다.  
 
-##2. 진행사항  
+##2. 사용된 도구  
+- Raspberry Pi model B+  
+- SanDisk micro sd card 32GB  
+- SanDisk Adapter  
+- ipTIME N100 mini (USB Wi-Fi dongle)  
+
+##3. 진행사항  
 - 라즈비안 다운로드  
 [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)  
 링크에서 라즈비안을 다운받을 수 있다.  
