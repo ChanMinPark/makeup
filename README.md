@@ -12,12 +12,12 @@
 
 (3) Web Crawler in java  
 java에서 웹크롤러를 구현. (소스코드를 가져오는 방법)  
-세부 폴더 :   
+세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/003_WebCrawler_java  
 
 (4) JsonParser in java  
 java에서 문자열을 Json타입으로 파싱하는 방법.  
-세부 폴더 : 
+세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/004_JsonParser_java  
 
 (5) 날씨정보가져오기  
 OpenAPI를 이용해서 원하는 위치(GPS 정보 이용)의 날씨정보를 출력.  
-세부 폴더 : 
+세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/005_WeatherByGPS_java  
