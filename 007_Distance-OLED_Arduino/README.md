@@ -35,3 +35,4 @@ OLED를 사용하기 위한 라이브러리가 필요하다.
 | GND     | Gnd  |
 
 ##5. 구성한 모습  
+![](https://github.com/ChanMinPark/makeup/blob/master/007_Distance-OLED_Arduino/image/pic.jpg)
