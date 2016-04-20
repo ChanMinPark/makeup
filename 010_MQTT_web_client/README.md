@@ -34,7 +34,7 @@ Javascript에서 MQTT Client를 구현하기 위해서는 라이브러리가 필
 
 ##5. 소스코드  
 필자가 작성한 소스코드(javascript가 작성된 jsp파일)은 아래 링크에서 확인할 수 있다.  
-![](https://github.com/ChanMinPark/makeup/blob/master/010_MQTT_web_client/code/mqttwebclientpage.jsp)  
+https://github.com/ChanMinPark/makeup/blob/master/010_MQTT_web_client/code/mqttwebclientpage.jsp  
 
 더 기본적이고 추가적인 설명은 Paho에서 제공하는 예제와 API doc을 확인하는 것이 좋다.  
 - Paho의 예제(하단에 예제가 있다.)  
