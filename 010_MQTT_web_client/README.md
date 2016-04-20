@@ -1,5 +1,5 @@
 ##1. 개요  
-MQTT Client를 Web에서 구현한다. 즉, MQTT Web Client를 구현하는 것이다.  
+MQTT Subscribe Client를 Web에서 구현한다. 즉, MQTT Web Subscribe Client를 구현하는 것이다.  
 Javascript에서 웹소켓을 통하여 MQTT Broker에 접속한다. 이때, MQTT Broker는 반드시 Websockets을 지원해야만 가능하다.  
 다양한 MQTT Broker의 기능 여부를 아래 링크에서 확인할 수 있다.  
 https://github.com/mqtt/mqtt.github.io/wiki/Server%20support  
@@ -14,6 +14,7 @@ https://github.com/mqtt/mqtt.github.io/wiki/Server%20support
 Javascript에서 MQTT Client를 구현하기 위해서는 라이브러리가 필요하다.  
 여기서는 Paho에서 구현한 라이브러리를 이용한다. Paho는 다양한 플랫폼에서의 MQTT Client 라이브러리를 구현해 놓았다.  
 그중에서 Javascript를 위한 라이브러리는 'mqttws31.js'이며 이는 아래 링크에서 다운로드 할 수 있다.  
+이 라이브러리를 이용하면 Sub/Pub 모두 가능하다.  
 
 - MQTT Client for Javascript(Paho)  
   (https://www.eclipse.org/downloads/download.php?file=/paho/1.1/paho.javascript-1.0.1.zip)  
@@ -43,4 +44,10 @@ Javascript에서 MQTT Client를 구현하기 위해서는 라이브러리가 필
 
 ##6. 구현 페이지  
 필자가 작성한 페이지는 아래와 같이 구현된다.  
-![](https://github.com/ChanMinPark/makeup/blob/master/010_MQTT_web_client/image/image3_web.JPG)
+![](https://github.com/ChanMinPark/makeup/blob/master/010_MQTT_web_client/image/image3_web.JPG)  
+
+동작 테스트는 Paho에서 Web을 이용한 client 구현을 테스트 할 수 있게 제공하는 사이트를 이용한다.  
+http://www.eclipse.org/paho/clients/js/utility/index.html  
+
+위의 사이트에서 상단의 Client ID만 대강 수정해주고 Connect를 누르면 Paho쪽의 MQTT Broker에 접속된다.  
+아래에서 Sub/Pub 테스트를 모두 할 수 있다.  
