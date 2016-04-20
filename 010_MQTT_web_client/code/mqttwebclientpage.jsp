@@ -27,7 +27,6 @@ Message : <div id="msg" style="display:inline"></div><br>
 	
 
 	function beginMQTTweb() {
-		//var mqclient;
 		if (document.getElementById("mqtt_con_but").value == "Connect") {
 			host = document.getElementById("text_host").value;
 			port = document.getElementById("text_port").value;
@@ -36,10 +35,7 @@ Message : <div id="msg" style="display:inline"></div><br>
 			if ((host == "") || (port == "")) {
 				alert("Please enter host and port.");
 			} else {
-				//mqclient = new Paho.MQTT.Client("iot.eclipse.org", 80, "clientId_pcm");
-				mqclient = new Paho.MQTT.Client(host, Number(port),
-						"clientId_pcm");
-				//document.write("hello456<br>");
+				mqclient = new Paho.MQTT.Client(host, Number(port), "clientId_pcm");
 
 				// set callback handlers
 				mqclient.onConnectionLost = onConnectionLost;
@@ -68,9 +64,7 @@ Message : <div id="msg" style="display:inline"></div><br>
 	function onConnect() {
 		// Once a connection has been made, make a subscription and send a message.
 		console.log("onConnect");
-		//document.write("onConnect<br>");
 		document.getElementById("con_status").textContent = "connect";
-		//mqclient.subscribe("/drvs/pcm/walkin");
 		mqclient.subscribe(topic);
 		document.getElementById("mqtt_con_but").value = "Disconnect";
 	}
@@ -81,8 +75,6 @@ Message : <div id="msg" style="display:inline"></div><br>
 			console.log("onConnectionLost:" + responseObject.errorMessage);
 			document.getElementById("con_status").textContent = "disconnect";
 			document.getElementById("mqtt_con_but").value = "Connect";
-			//document.write("onConnectionLost<br>");
-
 		}
 	}
 
@@ -90,11 +82,8 @@ Message : <div id="msg" style="display:inline"></div><br>
 	function onMessageArrived(message) {
 		console.log("onMessageArrived:" + message.payloadString);
 		document.getElementById("msg").textContent = message.payloadString;
-		//document.write("onMessageArrived<br>");
-		//document.write(message.payloadString+"<br>");
 	}
 </script>
-
 
 </body>
 </html>
