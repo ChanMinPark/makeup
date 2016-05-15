@@ -43,5 +43,5 @@ MQTT Subscribe Client를 Web에서 구현한다.
 세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/010_MQTT_web_client  
 
 (11) BCNLab Web v1  
-연구실 웹서버를 만들며 Spring framework를 익힌다.  
+연구실 웹서버를 만들며 Spring framework와 MariaDB를 익힌다.  
 세부 폴더 : https://github.com/ChanMinPark/makeup/tree/master/011_BCNLab_web_v1  
