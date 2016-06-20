@@ -1,6 +1,6 @@
 ##Raspbian - Jessie 초기 설정
 
-###1. 한글 폰트 설치
-한글 폰트 적용 시 한글 깨지는 현상 발생.  
-locale은 US로 유지하고 키보드만 KR로 설정.  
-한글 입력 설치해야함.  
+###1. Wi-Fi 고정 ip 설정.
+
+
+###2. Windows에서 mstsc를 이용하여 Raspberry Pi에 GUI 원격 접속 하기.
